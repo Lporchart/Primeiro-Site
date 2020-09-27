@@ -130,11 +130,24 @@ header{
     height: 90%;
     position: relative;
 }
+.modal.active{
+    background-color: white;
+    width: 100%;
+    margin: auto auto;
+    height: 100%;
+    position: relative;
+}
 
 .modal .close-modal{
     color: var(--color--rose);
     position: absolute;
     right: 0;
+    cursor: pointer;
+}
+.maximize-modal{
+    color: var(--color--rose);
+    position: absolute;
+    right: 25px;
     cursor: pointer;
 }
 
@@ -148,4 +161,29 @@ iframe {
     height: 100%;
     position: absolute;
     top: 3%;
+}
+
+.autor{
+    text-align: center;
+    padding: 24px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.tempo{
+    background-color: var(--color--rose);
+    filter: brightness(90%);
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.cards_noticias {
+    max-width: 800px;
+    margin: 0 auto;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px; 
+    
+}
+.card_blog img{
+    width: 100%;
 }
